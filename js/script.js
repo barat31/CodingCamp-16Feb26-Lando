@@ -61,8 +61,8 @@ function clearTasks() {
     renderTasks(tasks);
 }
 
-// Filter today's tasks
-function filterToday() {
+// Filter 
+function filter() {
     const today = new Date().toISOString().split("T")[0];
     const filtered = tasks.filter(task => task.date === today);
     renderTasks(filtered);
